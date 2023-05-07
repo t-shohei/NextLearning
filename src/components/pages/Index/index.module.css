@@ -1,0 +1,31 @@
+.userWrapper {
+  margin: 0.5rem 0;
+}
+
+.colon {
+  padding: 0 0.5rem;
+}
+
+.button {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.closeButton {
+  margin: 0 calc(50% - 2.5rem);
+  width: 5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #f00;
+  color: #fff;
+}
+
+.posts {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
