@@ -13,12 +13,7 @@ export const Index = () => {
   const { users, isLoading: usersIsLoading, error: usersError } = useUsers();
 
   // usePostsから投稿一覧などを取得して代入
-  const {
-    posts,
-    getPosts,
-    isLoading: postsIsLoading,
-    error: postsError,
-  } = usePosts();
+  const { getPosts } = usePosts();
 
   // useStateを使用してモーダルウィンドウの表示/非表示を表すbool値を宣言
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -26,16 +21,17 @@ export const Index = () => {
   /** モーダルウィンドウを表示にする関数 */
   const openModal = () => setModalIsOpen(true);
   /** モーダルウィンドウを非表示にする関数 */
-  const closeModal = () => setModalIsOpen(false);
+  const closeModal = () => {};
 
   /**
    * uidを引数にとり, そのユーザーの投稿一覧をモーダルウィンドウで表示する
    * @param uid user id
    */
   const viewPosts = (uid: number) => {
-    // 投稿一覧の取得が成功したらモーダルウィンドウを表示する
+    // 投稿一覧を取得
     getPosts(uid).then(() => {
-      openModal();
+      // 成功したらモーダルウィンドウを表示する
+
     });
   };
 
@@ -60,15 +56,12 @@ export const Index = () => {
       ))}
       {/* モーダルウィンドウ. onRequestCloseを設定してモーダル外がクリックされたときでも閉じるようにする */}
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        {postsIsLoading && <NowLoading />}
-        {postsError && <p>{postsError}</p>}
+        {/* ローディング中はローディング中のUIを表示 */}
+        
+        {/* エラーがある場合は表示する */}
+        
         {/* 投稿一覧をmapを使用して動的に表示 */}
-        {posts.map((post) => (
-          <div key={post.id} className={styles.posts}>
-            <h3>{post.title}</h3>
-            <p>{post.body}</p>
-          </div>
-        ))}
+        
         {/* 閉じるボタン. classNameを空白区切りで設定すると複数のstyleを当てられる */}
         <button
           className={`${styles.button} ${styles.closeButton}`}

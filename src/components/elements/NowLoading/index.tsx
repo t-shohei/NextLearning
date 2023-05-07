@@ -1,4 +1,4 @@
-// ローディング中に表示するUI
+// ローディング中に表示するUIを作成
 export const NowLoading = () => {
-  return <h3>Now Loading...</h3>;
+  return <></>;
 };
