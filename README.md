@@ -19,6 +19,12 @@ git clone https://github.com/ishida-0622/nextjs-learning-club
 npm install
 ```
 
+開発サーバーを起動
+
+```bash
+npm run dev
+```
+
 ## 参考資料
 
 - Next.js 公式ドキュメント : https://nextjs-ja-translation-docs.vercel.app/docs/getting-started
