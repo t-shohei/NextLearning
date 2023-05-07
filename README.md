@@ -1,6 +1,6 @@
 # 部活動 Next.js 勉強会用サンプルコード
 
-以下のような web アプリケーションを作成します。
+以下のようなwebアプリケーションを作成します。
 
 1. ユーザー一覧を表示する
 2. ユーザーを選択すると、そのユーザーの投稿一覧をモーダルウィンドウで表示する
@@ -27,8 +27,8 @@ npm run dev
 
 ## 参考資料
 
-- Next.js 公式ドキュメント : https://nextjs-ja-translation-docs.vercel.app/docs/getting-started
-- サバイバル TypeScript : https://typescriptbook.jp/
+- Next.js公式ドキュメント : https://nextjs-ja-translation-docs.vercel.app/docs/getting-started
+- サバイバルTypeScript : https://typescriptbook.jp/
 - 非同期処理関連
   - MDN : https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise
   - とほほ : https://www.tohoho-web.com/ex/promise.html
