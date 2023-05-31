@@ -25,6 +25,17 @@ npm install
 npm run dev
 ```
 
+ビルド
+```bash
+npm run build
+```
+
+静的ファイルとしてビルド
+```bash
+npm run build
+npm run export
+```
+
 ## 参考資料
 
 - Next.js公式ドキュメント : https://nextjs-ja-translation-docs.vercel.app/docs/getting-started
