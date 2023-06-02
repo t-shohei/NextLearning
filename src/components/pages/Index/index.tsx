@@ -31,7 +31,7 @@ export const Index = () => {
     // 投稿一覧を取得
     getPosts(uid).then(() => {
       // 成功したらモーダルウィンドウを表示する
-
+      // TODO: 実装
     });
   };
 
@@ -57,11 +57,11 @@ export const Index = () => {
       {/* モーダルウィンドウ. onRequestCloseを設定してモーダル外がクリックされたときでも閉じるようにする */}
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
         {/* ローディング中はローディング中のUIを表示 */}
-        
+        {/* TODO: 実装 */}
         {/* エラーがある場合は表示する */}
-        
+        {/* TODO: 実装 */}
         {/* 投稿一覧をmapを使用して動的に表示 */}
-        
+        {/* TODO: 実装 */}
         {/* 閉じるボタン. classNameを空白区切りで設定すると複数のstyleを当てられる */}
         <button
           className={`${styles.button} ${styles.closeButton}`}
