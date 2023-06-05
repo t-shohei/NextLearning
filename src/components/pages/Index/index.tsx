@@ -21,6 +21,7 @@ export const Index = () => {
   /** モーダルウィンドウを表示にする関数 */
   const openModal = () => setModalIsOpen(true);
   /** モーダルウィンドウを非表示にする関数 */
+  // TODO: 実装
   const closeModal = () => {};
 
   /**
